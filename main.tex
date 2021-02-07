@@ -1,0 +1,165 @@
+\documentclass[12pt]{article}
+
+%\usepackage{rastav}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{newlfont}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage[OT2]{fontenc}
+\usepackage{wrapfig}
+\usepackage{csquotes}
+\usepackage{algorithm2e}
+\usepackage{tikz}
+\usepackage{chemfig}
+%\usepackage{doc}
+%\usepackage{color}
+% \usepackage{colortbl}
+
+\righthyphenmin 500
+
+\def \dj {d\kern-0.4em\char"16\kern-0.1em}
+%\def Dj {\mbox{\raise0.3ex\hbox{-}\kern-0.37em D}}
+
+
+%\pagestyle{empty}
+
+
+\def \zn{,\kern-0.09em,}
+% ovo je nas pocetni znak navoda, a krajnji je `` (2* gore levo)
+% Engleski znaci navoda su " ili '' i oni su isti i na pocetku i na kraju
+
+ \hoffset -15mm
+ \textwidth 18cm
+ \voffset -30.0mm
+ \textheight 25.cm
+ \oddsidemargin 7mm
+ \evensidemargin 7mm
+
+
+\def\zh{\v z}
+\def\Zh{\v Z}
+\def\ch{\v c}
+\def\Ch{\v C}
+\def\sh{\v s}
+\def\Sh{\v S}
+\def\c1{\' c}
+\def\C1{\' C}
+\def\dj{d\kern-0.4em\char"16\kern-0.1em}
+\def\Dj{\mbox{\raise0.3ex\hbox{-}\kern-0.4em D}}
+\pagestyle{empty}
+
+
+\font \cyr=wncyr10 at 10pt
+
+\font \cyb=wncyb10 at 14pt
+
+\font \cybv=wncyb10 scaled 1200
+
+\font \cybb=wncyb10 scaled 1440
+
+\font \zad=wncyb10 scaled 850
+
+\font \cybbb=wncyb10 scaled 1800
+
+\font \cyi=wncyi10 at 10pt
+
+\font \cyrm=wncyr10 scaled 850
+
+\font \cyim=wncyi10 scaled 850
+
+\font \cybm=wncyb10 scaled 850
+
+\font \cyrmm=wncyr10 scaled 500
+
+\def\zh{\v z}
+\def\Zh{\v Z}
+\def\ch{\v c}
+\def\Ch{\v C}
+\def\sh{\v s}
+\def\Sh{\v S}
+\def\c1{\' c}
+\def\C1{\' C}
+\def\dj{d\kern-0.4em\char"16\kern-0.1em}
+\def\Dj{\mbox{\raise0.3ex\hbox{-}\kern-0.4em D}}
+\pagestyle{empty}
+
+
+\def\gclcpicture#1{%
+    \def\gclcline##1##2##3##4##5##6##7{%
+       \put(##1,##2){\special{em:point #1##3}}%
+       \put(##4,##5){\special{em:point #1##6}}%
+       \special{em:line #1##3,#1##6,##7mm}}}
+\gclcpicture{1}
+
+\newcommand\texteng{\fontencoding{OT1}\fontfamily{\rmdefault}\selectfont}
+\newcommand{\D}{\displaystyle}
+\newcommand{\T}{\textstyle}
+\newcommand*{\figuretitle}[1]{%
+    {\centering%   <--------  will only affect the title because of the grouping (by the
+    \textbf{#1}%              braces before \centering and behind \medskip). If you remove
+    \par\medskip}%            these braces the whole body of a {figure} env will be centered.
+}
+\newcommand{\rbr}[1]{\uppercase\expandafter{\romannummeral #1\relax}}
+
+\def\ug{\mathbin{\sphericalangle\,}}
+
+\def\mj{\mathbin{\leqslant}}
+
+\def\vj{\mathbin{\geqslant}}
+
+
+\newtheorem{te}{ Teorema}
+\newtheorem{de}{ Definicija}
+\newtheorem{lm}{ Lema}
+\newtheorem{zd}{ Zadaci}
+\newtheorem{pr}{ Primer}
+ 
+
+
+
+\begin{document}
+
+%\mag 2000
+
+\cyr
+
+\newcounter{zadatak}[section]
+\newcommand{\z}{\vspace{0.3cm}\par\noindent\refstepcounter{zadatak}{\bf\arabic{zadatak}. }}
+
+
+\font \eng=wncyb10 scaled 1800
+
+\begin{center}
+
+\normalsize
+{\textbf{\large{NASLOVI}}}\\
+{\texteng{ \textbf{\large{TITLE}}}}\\[10mm]
+
+%{\cybb Ognjen Petrov}
+\textbf{\emph{Autor:}}\\  \textbf{OGNJEN PETROV}, \text{\texteng{III}} razred, Matematichka gimnazija, Beograd;
+\end{center}
+\normalsize
+\begin{center}
+    \textbf{\normalsize REZIME}\\
+\end{center}
+
+
+    \par
+    \textbf{Kljuchne rechi}:
+    \\[10mm]
+\begin{center}
+    \textbf{\texteng{\normalsize ABSTRACT}}\\
+\end{center}
+\normalsize
+        {\par
+        \texteng{\par
+        \textbf{\texteng{Key words}}: }}
+\\
+
+\newpage
+
+ \end{document}
+
